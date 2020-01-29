@@ -1,0 +1,17 @@
+@import "~tailwindcss/base";
+
+* {
+  @apply text-6xl;
+}
+
+@import "~tailwindcss/components";
+
+.box {
+  @apply w-full bg-white px-4 py-4 shadow-xl mt-2 rounded-lg text-base;
+}
+
+.box .box-title {
+  @apply inline-block mb-4 text-xl font-semibold tracking-tight;
+}
+
+@import "~tailwindcss/utilities";
