@@ -1,14 +1,14 @@
 {
   "name": "styleguide-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Plugin Tailwindcss du styleguide GEMY Athena",
   "main": "index.js",
   "repository": "git@github.com:gemy-athena/styleguide-plugin.git",
   "author": "Gabriel Mustiere <gmustiere@groupe-gemy.fr>",
   "license": "MIT",
   "dependencies": {
-    "tailwindcss": "^1.1.4",
     "@tailwindcss/custom-forms": "^0.2.1",
+    "tailwindcss": "^1.1.4",
     "tailwindcss-debug-screens": "^0.1.0",
     "tailwindcss-elevation": "^0.3.3",
     "tailwindcss-spinner": "^1.0.0"
