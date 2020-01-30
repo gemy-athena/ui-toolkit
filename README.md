@@ -1,3 +1,21 @@
-# Plugin Styleguide
+#Athena UI Toolkit
 
-Ceci est le package styleguide de Gemy Athena
+## Installation
+
+### Yarn
+`` 
+yarn add athena-ui-toolkit
+``
+
+### Npm
+`` 
+npm i athena-ui-toolkit
+``
+
+## Configuration
+
+Pour utiliser les classes CSS fournit par le toolkit, vous devez importer le fichier global dans votre projet.
+
+```css
+@import '~athena-ui-toolkit/scss/ui.scss'
+```
