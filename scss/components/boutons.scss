@@ -3,11 +3,7 @@
 }
 
 .btn:focus {
-  @apply focus:outline-none;
-}
-
-.btn {
-  @apply focus:outline-none;
+  @apply outline-none;
 }
 
 .btn-xs {
