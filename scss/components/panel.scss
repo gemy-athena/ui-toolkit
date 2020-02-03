@@ -1,0 +1,6 @@
+.panel {
+  @apply bg-white px-4 py-4 shadow-xl rounded-lg;
+  .titre {
+    @apply inline-block mb-4 text-xl font-semibold tracking-tight;
+  }
+}
