@@ -2,9 +2,10 @@
 @import "~tailwindcss/base";
 
 @import "~tailwindcss/components";
-@import "components/boutons";
-@import "components/liens";
+@import "components/bouton";
+@import "components/lien";
 @import "components/panel";
+@import "components/input";
 
 @import "~tailwindcss/utilities";
 @import "utilities/grow";
