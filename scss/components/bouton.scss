@@ -1,49 +1,28 @@
-.label {
-  @apply ml-1;
-  span.obligatoire {
-    @apply text-red-500 mr-1;
-  }
-}
-
-.message {
-  @apply text-xs ml-1;
-  &.message-erreur {
-    @apply text-red-500;
-  }
-}
-
-.input {
-  @apply form-input rounded-lg my-2;
-  &.input:focus {
-    @apply outline-none shadow-md border-blue-500;
+.btn {
+  @apply py-2 px-4 cursor-pointer font-bold rounded-lg;
+  :focus {
+    @apply outline-none;
   }
 
-  &.input-valide {
-    @apply border-green-500 bg-green-100 text-green-500;
+  &.btn-xs {
+    @apply py-1 px-2 text-xs;
   }
 
-  &.input-invalide {
-    @apply border-red-500 bg-red-100 text-red-500;
-    &::placeholder {
-      @apply text-red-300;
+  &.btn-xl {
+    @apply py-3 px-6 text-xl;
+  }
+
+  &.btn-valider {
+    @apply text-white bg-green-400 border border-green-600;
+    :hover {
+      @apply bg-green-500;
     }
   }
-}
 
-.select {
-  @apply rounded-lg my-2;
-  &.select:focus {
-    @apply outline-none shadow-md border-blue-500;
-  }
-
-  &.select-valide {
-    @apply border-green-500 bg-green-100 text-green-500;
-  }
-
-  &.select-invalide {
-    @apply border-red-500 bg-red-100 text-red-500;
-    &::placeholder {
-      @apply text-red-300;
+  &.btn-annuler {
+    @apply text-gray-500 bg-gray-100 border border-gray-600;
+    :hover {
+      @apply bg-gray-200;
     }
   }
 }
