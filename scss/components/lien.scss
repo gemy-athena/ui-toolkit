@@ -1,0 +1,9 @@
+.lien {
+  @apply cursor-pointer underline font-normal;
+  &.lien-xl {
+    @apply text-xl;
+  }
+  &.lien-xs {
+    @apply text-xs;
+  }
+}

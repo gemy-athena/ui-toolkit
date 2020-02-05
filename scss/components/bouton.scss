@@ -1,0 +1,49 @@
+.label {
+  @apply ml-1;
+  span.obligatoire {
+    @apply text-red-500 mr-1;
+  }
+}
+
+.message {
+  @apply text-xs ml-1;
+  &.message-erreur {
+    @apply text-red-500;
+  }
+}
+
+.input {
+  @apply form-input rounded-lg my-2;
+  &.input:focus {
+    @apply outline-none shadow-md border-blue-500;
+  }
+
+  &.input-valide {
+    @apply border-green-500 bg-green-100 text-green-500;
+  }
+
+  &.input-invalide {
+    @apply border-red-500 bg-red-100 text-red-500;
+    &::placeholder {
+      @apply text-red-300;
+    }
+  }
+}
+
+.select {
+  @apply rounded-lg my-2;
+  &.select:focus {
+    @apply outline-none shadow-md border-blue-500;
+  }
+
+  &.select-valide {
+    @apply border-green-500 bg-green-100 text-green-500;
+  }
+
+  &.select-invalide {
+    @apply border-red-500 bg-red-100 text-red-500;
+    &::placeholder {
+      @apply text-red-300;
+    }
+  }
+}
