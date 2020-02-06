@@ -1,0 +1,118 @@
+[data-tooltip-content] {
+  position: relative;
+
+  &:after {
+    content: attr(data-tooltip-content);
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &:hover:after, &:hover:before {
+    visibility: visible;
+  }
+}
+
+[data-tooltip-position='left'] {
+  &:after {
+    right: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 0.5em;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0px;
+    right: 100%;
+    top: 50%;
+    border: 15px solid transparent;
+    border-right: 0;
+    border-left: 15px solid black;
+    transform: translate(0, -50%);
+    visibility: hidden;
+  }
+}
+
+[data-tooltip-position='right']:after {
+  top: 0;
+  left: 105%;
+}
+
+[data-tooltip-position='right'] {
+  &:after {
+    left: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 0.5em;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0px;
+    left: 100%;
+    top: 50%;
+    border: 15px solid transparent;
+    border-left: 0;
+    border-right: 15px solid black;
+    transform: translate(0, -50%);
+    visibility: hidden;
+  }
+}
+
+[data-tooltip-position='top'] {
+  &:after {
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 0.5em;
+    white-space: nowrap;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0px;
+    left: 50%;
+    bottom: 100%;
+    border: 15px solid transparent;
+    border-bottom: 0;
+    border-top: 15px solid black;
+    transform: translate(-50%, 0);
+    visibility: hidden;
+  }
+}
+
+[data-tooltip-position='bottom'] {
+  &:after {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 0.5em;
+    white-space: nowrap;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0px;
+    left: 50%;
+    top: 100%;
+    border: 15px solid transparent;
+    border-top: 0;
+    border-bottom: 15px solid black;
+    transform: translate(-50%, 0);
+    visibility: hidden;
+  }
+}
