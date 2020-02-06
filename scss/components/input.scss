@@ -13,7 +13,7 @@
 }
 
 .input {
-  @apply rounded-lg my-2;
+  @apply form-input rounded-lg my-2;
   &.input:focus {
     @apply outline-none shadow-md border-blue-500;
   }
@@ -31,7 +31,7 @@
 }
 
 .select {
-  @apply rounded-lg my-2;
+  @apply form-select rounded-lg my-2;
   &.select:focus {
     @apply outline-none shadow-md border-blue-500;
   }
