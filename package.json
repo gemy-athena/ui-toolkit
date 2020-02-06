@@ -1,6 +1,6 @@
 {
   "name": "athena-ui-toolkit",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Ensemble de composants graphiques basé sur Tailwind CSS",
   "keywords": [
     "tailwindcss",
@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",
-    "tailwindcss": "^1.1.4",
+    "tailwindcss": "^1.2.0",
     "tailwindcss-debug-screens": "^0.1.0",
     "tailwindcss-elevation": "^0.3.3",
     "tailwindcss-spinner": "^1.0.0"
