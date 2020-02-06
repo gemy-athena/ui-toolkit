@@ -676,7 +676,7 @@ module.exports = {
             fontWeight: ['responsive', 'hover', 'focus'],
             height: ['responsive'],
             inset: ['responsive'],
-            justifyContent: ['responsive'], 
+            justifyContent: ['responsive'],
             letterSpacing: ['responsive'],
             lineHeight: ['responsive'],
             listStylePosition: ['responsive'],
@@ -733,8 +733,8 @@ module.exports = {
         },
         corePlugins: {},
         plugins: [
-            require('tailwindcss-debug-screens'),
             require('@tailwindcss/custom-forms'),
+            require('tailwindcss-debug-screens'),
             require('tailwindcss-spinner')(),
             require('tailwindcss-elevation')(['responsive'])
         ]
