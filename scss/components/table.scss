@@ -1,0 +1,31 @@
+.table {
+    @apply w-full bg-white shadow-xl rounded-lg text-sm;
+    table {
+      @apply table-auto shadow rounded-lg w-full;
+       thead {
+         tr {
+           th {
+              @apply align-middle py-2 pl-4 pr-8;
+           }
+         }
+       }
+
+      tbody {
+        tr {
+          @apply border-t border-gray-400
+          &:even {
+            @apply bg-gray-100;
+          }
+          &:hover {
+            @apply bg-gray-200;
+          }
+          td {
+            @apply align-middle py-2 pl-4 pr-8 border-r border-gray-200;
+           &:last-child {
+             @apply border-r-0;
+           }
+          }
+        }
+      }
+    }
+}
