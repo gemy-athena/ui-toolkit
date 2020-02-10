@@ -1,5 +1,3 @@
-@import '../../node_modules/@tailwindcss/custom-forms/dist/custom-forms.css';
-
 .label {
   @apply ml-1;
   span.obligatoire {
@@ -15,7 +13,8 @@
 }
 
 .input {
-  @apply form-input rounded-lg my-2;
+  @extend form-input
+  @apply rounded-lg my-2;
   &.input:focus {
     @apply outline-none shadow-md border-blue-500;
   }

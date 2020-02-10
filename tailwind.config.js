@@ -736,7 +736,8 @@ module.exports = {
             require('@tailwindcss/custom-forms'),
             require('tailwindcss-debug-screens'),
             require('tailwindcss-spinner')(),
-            require('tailwindcss-elevation')(['responsive'])
+            require('tailwindcss-elevation')(['responsive']),
+            require('postcss-extend')
         ]
     }
 };
