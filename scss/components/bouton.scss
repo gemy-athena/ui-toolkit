@@ -25,4 +25,15 @@
       @apply bg-gray-200;
     }
   }
+
+  &.btn-supprimer {
+    @apply text-white bg-red-400 border border-red-600;
+    :hover {
+      @apply bg-red-500;
+    }
+  }
+
+  .btn-logo {
+    @apply mr-1;
+  }
 }
