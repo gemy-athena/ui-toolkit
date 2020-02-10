@@ -13,33 +13,6 @@ module.exports = {
             lg: '1024px',
             xl: '1280px'
         },
-        customForms: theme => ({
-            default: {
-                input: {
-                    borderRadius: theme('borderRadius.lg'),
-                    marginTop: theme('spacing.2'),
-                    marginBottom: theme('spacing.2'),
-                    '&:focus': {
-                        boxShadow: theme('boxShadow.md'),
-                        borderColor: theme('colors.blue.500')
-                    },
-                    '&.input-valide': {
-                        borderColor: theme('colors.green.500'),
-                        backgroundColor: theme('colors.green.100'),
-                        textColor: theme('colors.green.500')
-                    },
-                    '&.input-invalide': {
-                        borderColor: theme('colors.red.500'),
-                        backgroundColor: theme('colors.red.100'),
-                        textColor: theme('colors.red.500'),
-                        '&::placeholder': {
-                            textColor: theme('colors.red.300')
-                        }
-                    }
-
-                },
-            },
-        }),
         colors: {
             transparent: 'transparent',
             white: '#fff',
