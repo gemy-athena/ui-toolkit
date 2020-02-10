@@ -33,7 +33,7 @@
 }
 
 .select {
-  @apply form-select rounded-lg my-2;
+  @apply rounded-lg my-2;
   &.select:focus {
     @apply outline-none shadow-md border-blue-500;
   }
