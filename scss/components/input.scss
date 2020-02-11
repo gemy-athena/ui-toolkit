@@ -49,3 +49,22 @@
     }
   }
 }
+
+.textarea {
+  @extend .form-textarea;
+  @apply rounded-lg;
+  &.textarea:focus {
+    @apply outline-none shadow-md border-blue-500;
+  }
+
+  &.textarea-valide {
+    @apply border-green-500 bg-green-100 text-green-500;
+  }
+
+  &.textarea-invalide {
+    @apply border-red-500 bg-red-100 text-red-500;
+    &::placeholder {
+      @apply text-red-300;
+    }
+  }
+}
