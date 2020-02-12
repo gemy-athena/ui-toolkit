@@ -1,5 +1,8 @@
 .table {
-    @apply w-full bg-white shadow-xl rounded-lg text-sm;
+    @apply w-full bg-white shadow-xl rounded-lg;
+    * {
+      @apply text-sm;
+    }
     table {
       @apply table-auto shadow rounded-lg w-full;
        thead {

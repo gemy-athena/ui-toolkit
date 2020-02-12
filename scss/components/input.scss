@@ -29,6 +29,14 @@
       @apply text-red-300;
     }
   }
+
+  &.input-icone-left {
+    @apply pl-12 m-0;
+  }
+
+  &.input-icone-right {
+    @apply pr-4 m-0;
+  }
 }
 
 .select {
