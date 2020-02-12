@@ -1,0 +1,10 @@
+.icon {
+  @apply mr-2;
+  &.icon-xl {
+    @apply text-xl;
+  }
+
+  &.icon-xs {
+    @apply mr-1 text-xs;
+  }
+}
