@@ -1,7 +1,11 @@
 @import "base/base";
-@import "~tailwindcss/base";
 
+@import "~tailwindcss/base";
 @import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+@import "~@tailwindcss/custom-forms/dist/custom-forms";
+
 @import "components/bouton";
 @import "components/lien";
 @import "components/panel";
@@ -9,6 +13,13 @@
 @import "components/icon";
 @import "components/tooltip";
 @import "components/table";
-@import "~tailwindcss/utilities";
+
 @import "utilities/grow";
-@import "~@tailwindcss/custom-forms/dist/custom-forms";
+@import "utilities/variables";
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+
