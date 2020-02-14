@@ -1,0 +1,9 @@
+.widget {
+  @apply flex flex-col flex-no-wrap;
+  .header {
+    @apply border border-gray-500 rounded-t-lg p-2 text-center bg-gray-200;
+  }
+  .contenu {
+    @apply bg-white border border-gray-500 rounded-b-lg border-t-0 border-dashed p-2;
+  }
+}
