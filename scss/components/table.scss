@@ -1,15 +1,15 @@
-.tableau {
-  @apply bg-white shadow-xl rounded-lg;
+.tableau-container {
+  @apply w-full bg-white shadow-xl rounded-lg p-4;
   * {
     @apply text-sm;
   }
 
   table {
-    @apply shadow rounded-lg w-full;
+    @apply table-fixed rounded-lg w-full;
     thead {
       tr {
         th {
-          @apply font-medium py-2;
+          @apply font-medium align-middle py-2 px-4;
         }
       }
     }
@@ -26,7 +26,7 @@
         }
 
         td {
-          @apply py-2 border-r border-gray-200 p-2;
+          @apply align-middle py-2 px-4 border-r border-gray-200 break-words;
           &:first-child {
             @apply border-l-0;
           }
