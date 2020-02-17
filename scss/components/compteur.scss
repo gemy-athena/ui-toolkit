@@ -1,0 +1,31 @@
+.compteur {
+  @apply rounded-full py-1 px-3 text-white mr-1;
+
+  &.compteur-gray {
+    @apply bg-gray-600;
+  }
+
+  &.compteur-yellow {
+    @apply bg-yellow-600;
+  }
+
+  &.compteur-blue {
+    @apply bg-blue-600;
+  }
+
+  &.compteur-green {
+    @apply bg-green-600;
+  }
+
+  &.compteur-indigo {
+    @apply bg-indigo-600;
+  }
+
+  &.compteur-pink {
+    @apply bg-pink-600;
+  }
+
+  &.compteur-black {
+    @apply bg-black-900;
+  }
+}
