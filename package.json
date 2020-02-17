@@ -26,6 +26,10 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
     "@tailwindcss/custom-forms": "^0.2.1",
-    "tailwindcss": "^1.2.0"
+    "postcss-extend": "^1.0.5",
+    "tailwindcss": "^1.2.0",
+    "tailwindcss-debug-screens": "^0.1.0",
+    "tailwindcss-elevation": "^0.3.3",
+    "tailwindcss-spinner": "^1.0.0"
   }
 }
