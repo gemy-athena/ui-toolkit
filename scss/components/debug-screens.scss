@@ -1,4 +1,3 @@
-
 .debug-screens:before {
   position: fixed;
   z-index: 2147483647;
@@ -11,28 +10,28 @@
   background-color: #000;
   color: #fff;
   box-shadow: 0 0 0 1px #fff;
-  content: "screen: _"
+  content: "screen: xs"
 }
 
-@media (min-width: 500px) {
+@media (min-width: 640px) {
   .debug-screens:before {
     content: "screen: sm"
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .debug-screens:before {
     content: "screen: md"
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .debug-screens:before {
     content: "screen: lg"
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .debug-screens:before {
     content: "screen: xl"
   }
