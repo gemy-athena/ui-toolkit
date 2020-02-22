@@ -2,6 +2,7 @@
   position: relative;
 
   &:after {
+    @apply text-sm font-light;
     content: attr(data-tooltip-content);
     visibility: hidden;
     background-color: black;
@@ -11,6 +12,7 @@
     border-radius: 6px;
     position: absolute;
     z-index: 1;
+
   }
 
   &:hover:after, &:hover:before {
