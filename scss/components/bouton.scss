@@ -32,4 +32,11 @@
       @apply bg-red-500;
     }
   }
+
+  &.btn-action {
+    @apply text-white bg-teal-400 border border-teal-600;
+    :hover {
+      @apply bg-teal-500;
+    }
+  }
 }
