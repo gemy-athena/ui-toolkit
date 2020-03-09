@@ -1,6 +1,6 @@
 {
   "name": "athena-ui-toolkit",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "description": "Ensemble de composants graphiques basé sur Tailwind CSS",
   "keywords": [
     "tailwindcss",
