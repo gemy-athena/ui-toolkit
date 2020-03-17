@@ -349,10 +349,11 @@ module.exports = {
             ...theme('spacing'),
             ...negative(theme('spacing'))
         }),
-        maxHeight: {
+        maxHeight: (theme, {breakpoints}) => ({
             full: '100%',
-            screen: '100vh'
-        },
+            screen: '100vh',
+            ...theme('spacing'),
+        }),
         maxWidth: (theme, {breakpoints}) => ({
             none: 'none',
             xs: '20rem',
@@ -648,7 +649,7 @@ module.exports = {
             alignSelf: ['responsive'],
             appearance: ['responsive'],
             backgroundAttachment: ['responsive'],
-            backgroundColor: ['responsive', 'hover', 'focus','even'],
+            backgroundColor: ['responsive', 'hover', 'focus', 'even'],
             backgroundPosition: ['responsive'],
             backgroundRepeat: ['responsive'],
             backgroundSize: ['responsive'],
