@@ -1,10 +1,11 @@
 .tableau-container {
   @apply w-full bg-white shadow-xl rounded-lg px-4 py-4;
-  * {
-    @apply text-sm;
-  }
 
   table {
+    * {
+      @apply text-sm;
+    }
+
     @apply table-fixed rounded-lg w-full;
     thead {
       tr {
