@@ -1,0 +1,36 @@
+.badge {
+  @apply py-1 px-2 rounded-full text-white;
+
+  &.badge-xs {
+    @apply py-0 px-1 text-xs;
+  }
+
+  &.badge-xl {
+    @apply py-2 px-4 text-xl;
+  }
+
+  &.badge-yellow {
+    @apply bg-yellow-600;
+  }
+
+  &.badge-blue {
+    @apply bg-blue-600;
+  }
+
+  &.badge-green {
+    @apply bg-green-600;
+  }
+
+  &.badge-purple {
+    @apply bg-purple-600;
+  }
+
+  &.badge-pink {
+    @apply bg-pink-600;
+  }
+
+  &.badge-black {
+    @apply bg-black-600;
+  }
+
+}
