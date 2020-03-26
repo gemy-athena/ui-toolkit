@@ -2,7 +2,7 @@
   @apply py-1 px-2 rounded-full text-white;
 
   &.badge-xs {
-    @apply py-0 px-1;
+    @apply py-0 px-1 text-sm;
   }
 
   &.badge-xl {
@@ -33,4 +33,7 @@
     @apply bg-black-900;
   }
 
+  &.badge-text-bold {
+    @apply text-bold;
+  }
 }
