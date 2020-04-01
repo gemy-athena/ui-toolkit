@@ -25,6 +25,7 @@
     top: 50%;
     transform: translate(0, -50%);
     margin-right: 0.5em;
+    white-space: nowrap;
   }
 
   &:before {
@@ -52,6 +53,7 @@
     top: 50%;
     transform: translate(0, -50%);
     margin-left: 0.5em;
+    white-space: nowrap;
   }
 
   &:before {
