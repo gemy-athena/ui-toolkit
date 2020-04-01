@@ -118,3 +118,26 @@
     visibility: hidden;
   }
 }
+
+[data-tooltip-position='top-right'] {
+  &:after {
+    bottom: 100%;
+    right: 0;
+    margin-bottom: 0.5em;
+    white-space: nowrap;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    right: 0;
+    bottom: 100%;
+    border: 8px solid transparent;
+    border-bottom: 0;
+    border-top: 15px solid black;
+    transform: translate(-50%, 0) rotate(45deg);
+    visibility: hidden;
+  }
+}
