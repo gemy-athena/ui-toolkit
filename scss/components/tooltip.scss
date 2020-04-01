@@ -4,7 +4,7 @@
   &:after {
     @apply text-sm font-light;
     content: attr(data-tooltip-content);
-    visibility: hidden;
+    display: none;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -12,11 +12,10 @@
     border-radius: 6px;
     position: absolute;
     z-index: 1;
-
   }
 
   &:hover:after, &:hover:before {
-    visibility: visible;
+    display:block;
   }
 }
 
@@ -31,7 +30,7 @@
   &:before {
     content: '';
     position: absolute;
-    display: block;
+    display: none;
     width: 0px;
     right: 100%;
     top: 50%;
@@ -39,7 +38,6 @@
     border-right: 0;
     border-left: 15px solid black;
     transform: translate(0, -50%);
-    visibility: hidden;
   }
 }
 
@@ -59,7 +57,7 @@
   &:before {
     content: '';
     position: absolute;
-    display: block;
+    display: none;
     width: 0px;
     left: 100%;
     top: 50%;
@@ -67,7 +65,6 @@
     border-left: 0;
     border-right: 15px solid black;
     transform: translate(0, -50%);
-    visibility: hidden;
   }
 }
 
@@ -83,7 +80,7 @@
   &:before {
     content: '';
     position: absolute;
-    display: block;
+    display: none;
     width: 0px;
     left: 50%;
     bottom: 100%;
@@ -91,7 +88,6 @@
     border-bottom: 0;
     border-top: 15px solid black;
     transform: translate(-50%, 0);
-    visibility: hidden;
   }
 }
 
@@ -107,7 +103,7 @@
   &:before {
     content: '';
     position: absolute;
-    display: block;
+    display: none;
     width: 0px;
     left: 50%;
     top: 100%;
@@ -115,14 +111,13 @@
     border-top: 0;
     border-bottom: 15px solid black;
     transform: translate(-50%, 0);
-    visibility: hidden;
   }
 }
 
 [data-tooltip-position='top-right'] {
   &:after {
     bottom: 100%;
-    right: 0;
+    left: 100%;
     margin-bottom: 0.5em;
     white-space: nowrap;
   }
@@ -130,14 +125,79 @@
   &:before {
     content: '';
     position: absolute;
-    display: block;
+    display: none;
     width: 0;
-    right: 0;
+    left: 100%;
     bottom: 100%;
     border: 8px solid transparent;
     border-bottom: 0;
     border-top: 15px solid black;
     transform: translate(-50%, 0) rotate(45deg);
-    visibility: hidden;
+  }
+}
+
+[data-tooltip-position='top-left'] {
+  &:after {
+    bottom: 100%;
+    right: 100%;
+    margin-bottom: 0.5em;
+    white-space: nowrap;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: none;
+    width: 0;
+    right: 100%;
+    bottom: 100%;
+    border: 8px solid transparent;
+    border-bottom: 0;
+    border-top: 15px solid black;
+    transform: translate(calc(-50% + 15px), 0) rotate(-45deg);
+  }
+}
+
+[data-tooltip-position='bottom-left'] {
+  &:after {
+    top: 100%;
+    right: 100%;
+    margin-top: 0.5em;
+    white-space: nowrap;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: none;
+    width: 0;
+    right: 100%;
+    top: 100%;
+    border: 8px solid transparent;
+    border-top: 0;
+    border-bottom: 15px solid black;
+    transform: translate(calc(-50% + 15px), 0) rotate(45deg);
+  }
+}
+
+[data-tooltip-position='bottom-right'] {
+  &:after {
+    top: 100%;
+    left: 100%;
+    margin-top: 0.5em;
+    white-space: nowrap;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: none;
+    width: 0;
+    left: 100%;
+    top: 100%;
+    border: 8px solid transparent;
+    border-top: 0;
+    border-bottom: 15px solid black;
+    transform: translate(-50%, 0) rotate(-45deg);
   }
 }
