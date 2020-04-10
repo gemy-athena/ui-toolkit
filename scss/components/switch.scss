@@ -1,0 +1,49 @@
+.switch {
+  @apply relative inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  @apply opacity-0 w-0 h-0;
+}
+
+.slider {
+  @apply absolute cursor-pointer inset-0 bg-gray-400;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  @apply absolute bg-white;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  @apply bg-green-400;
+}
+
+input:focus + .slider {
+  @apply shadow-md;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
