@@ -95,3 +95,11 @@
     }
   }
 }
+
+.switch, .switch-xs {
+  &.erreur {
+    .slider {
+      @apply border-red-500 bg-red-400;
+    }
+  }
+}
