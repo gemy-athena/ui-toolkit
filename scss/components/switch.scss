@@ -6,7 +6,7 @@
   input {
     @apply opacity-0 w-0 h-0;
 
-    &:checked + .slider {
+    &:checked + .switch-slider {
       @apply bg-green-400;
 
       &:before {
@@ -16,13 +16,15 @@
       }
     }
 
-    &:focus + .slider {
+    &:focus + .switch-slider {
       @apply shadow-md;
     }
   }
 
-  .slider {
+  .switch-slider {
     @apply absolute cursor-pointer inset-0 bg-gray-400;
+    width: 60px;
+    height: 34px;
     -webkit-transition: .4s;
     transition: .4s;
 
@@ -37,7 +39,7 @@
       transition: .4s;
     }
 
-    &.round {
+    &.switch-round {
       border-radius: 34px;
 
       &:before {
@@ -55,7 +57,7 @@
   input {
     @apply opacity-0 w-0 h-0;
 
-    &:checked + .slider {
+    &:checked + .switch-slider {
       @apply bg-green-400;
 
       &:before {
@@ -65,13 +67,15 @@
       }
     }
 
-    &:focus + .slider {
+    &:focus + .switch-slider {
       @apply shadow-md;
     }
   }
 
-  .slider {
+  .switch-slider {
     @apply absolute cursor-pointer inset-0 bg-gray-400;
+    height: 22px;
+    width: 40px;
     -webkit-transition: .4s;
     transition: .4s;
 
@@ -86,7 +90,7 @@
       transition: .4s;
     }
 
-    &.round {
+    &.switch-round {
       border-radius: 22px;
 
       &:before {
@@ -98,7 +102,7 @@
 
 .switch, .switch-xs {
   &.erreur {
-    .slider {
+    .switch-slider {
       @apply border-red-500 bg-red-400;
     }
   }
